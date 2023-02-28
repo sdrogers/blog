@@ -105,11 +105,11 @@ For any state in the tic-tac-toe board, there are three other exactly equivalent
 
 `kaggle-environments` also has an opponent called `reaction`. This opponent will always form and stop lines when they can. The equivalent plots to those above for this opponent are:
 
-<img src='/assets/q_learn_reaction_performance.png'>
+<img src='/images/q_learn_reaction_performance.png'>
 
 and
 
-<img src='/assets/q_learn_reaction_states.png'>
+<img src='/images/q_learn_reaction_states.png'>
 
 It's worth noting that in this case, the initial performance of the agent is much worse. This is to be expected as the opponent will now make moves that stop the agent winning, or cause the agent to lose when it is able to. That said, the agent still learns pretty quickly how to win.
 
