@@ -82,11 +82,11 @@ All of the code for this is in a Jupyter notebook [here](https://github.com/sdro
 
 Initially, I use the `random` player provided by `kaggle-environments`. This player picks a valid move at random. 5000 training games are played, and $$\epsilon$$ is fixed at 1 for the first 2000 and then decays exponentially to approximately 0 over the next 3000. The agent always plays as player 1 and always goes first. Every 100 training games, the agent plays 100 games against the opponent to assess what proportion it wins. The output of a game will be +1 if the agent wins, 0 if it is a draw, and -1 if it loses. Averaging this value gives a summary of performance between -1 and 1, the higher the better. This is how that performance changes as training progresses (the dashed line is the point at which $$\epsilon$$ begins to decay):
 
-<img src='/assets/q_learn_random_performance.png'>
+<img src='/images/q_learn_random_performance.png'>
 
 The agent learns pretty quickly to beat a random opponent: by the time it has played around 2000 training games, it wins almost all of the time. Note that we might imagine the performance would start at 0, but in fact it starts at about 0.2. This is probably just the advantage our agent gets for always going first. We can also plot how many states it has explored as a function of the number of training games:
 
-<img src='/assets/q_learn_random_states.png'>
+<img src='/images/q_learn_random_states.png'>
 
 It's also interesting to look at values within the Q-table. Here's the value that has been learnt for the initial state:
 
