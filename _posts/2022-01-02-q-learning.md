@@ -2,6 +2,7 @@
 layout: post
 author: Simon
 title: Noughts and Crosses with Q-learning
+tags: AI ML
 ---
 
 Reinforcement Learning is something I've been keen to get to understand a bit more for a while. I've always had a high-level understanding but never actually _done_ it. Ultimately, I'd like to play with deep Q-learning but that felt like a bit more than I wanted to bite off, so started with standard Q-learning.
